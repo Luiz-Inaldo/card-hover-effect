@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    background-color: #212121;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-wrapper {
+    height: 400px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    /* overflow: hidden; */
+}
+
+.card {
+    width: 200px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(100%);
+    color: #fff;
+    transition: .2s;
+}
+
+.card:nth-child(1) {
+    background-image: url(https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.card:nth-child(2) {
+    background-image: url(https://images.unsplash.com/photo-1477240381028-271008c7415c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.card:nth-child(3) {
+    background-image: url(https://plus.unsplash.com/premium_photo-1675368244123-082a84cf3072?q=80&w=2150&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.card:nth-child(4) {
+    background-image: url(https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.card:nth-child(5) {
+    background-image: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.card:nth-child(6) {
+    background-image: url(https://images.unsplash.com/photo-1473654729523-203e25dfda10?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.card p {
+    margin-bottom: 1rem;
+}
+
+.card button {
+    border: none;
+    background-color: #39cf44;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.card button:hover {
+    opacity: 1;
+}
+
+.card button:active {
+    background-color: #39cf4499;
+}
+
+.card:hover {
+    /* transform: scale(1.1); */
+    width: 300px;
+    z-index: 30;
+    filter: grayscale(0);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.img-inner img {
+    width: 100%;
+}
